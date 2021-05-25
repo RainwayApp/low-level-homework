@@ -1,12 +1,12 @@
 # Take-home assignment: data processing pipeline
-C++ project to implement a multi-thread aware data processing pipeline.
+Rust/C/C++ project to implement a multi-thread aware data processing pipeline.
 
 ## Project Description
-Design and implement a framework for a data processing pipeline using C++ (see Wikipedia's description of data processing pipeline). This framework should be general enough to make it applicable to any number of scenarios. It should also be capable of taking advantage of a multi-core operating environment (i.e. multi-threaded data processing). So basically, the framework should make it possible to hook together an arbitrary and custom set of data processing elements to process, a potentially, large data set efficiently. Each data processing element, or node, in the pipeline receives input, processes it, and produces output which is then processed by another node or set of nodes.
+Design and implement a framework for a data processing pipeline using Rust, C or C++ (see Wikipedia's description of data processing pipeline). This framework should be general enough to make it applicable to any number of scenarios. It should also be capable of taking advantage of a multi-core operating environment (i.e. multi-threaded data processing). So basically, the framework should make it possible to hook together an arbitrary and custom set of data processing elements to process, a potentially, large data set efficiently. Each data processing element, or node, in the pipeline receives input, processes it, and produces output which is then processed by another node or set of nodes.
 
 ## Functional and Non-Functional Requirements
 
-* Only standard C++ code should be used (C++11, C++14, or even C++17).
+* Only standard Rust, C, or C++17 code should be used.
 * No 3rd party libraries.
 * Should support multi-threaded processing.
 * Should support 1 to many on output. In other words the output of a single data processor can be used as input to more than 1 data processor.
@@ -36,6 +36,6 @@ Couple of assumptions:
 * The input files will be named in an orderly fashion, i.e. if there are three input files they will be named 0.pcm, 1.pcm, 2.pcm.
 * The input files are just binary files consisting of an array of either 32 bit floating point numbers or 16 bit integers.
 
-The primary goal of the project is to demonstrate understanding of C++ and its standard libraries, and multi-threaded programming, and to demonstrate the ability to learn new technologies and/or techniques. Feel free to google as much as you need to in order to figure out what you need to figure out.
+The primary goal of the project is to demonstrate understanding of your chosen systems programming language and its standard libraries and multi-threaded programming, and to demonstrate the ability to learn new technologies and/or techniques. Feel free to google as much as you need to in order to figure out what you need to figure out.
 
 When you have completed the project, create a repo on your personal account and push the source code and the necessary files to build the code and run it, then link it to us in an email to work-at [AT] rainway.com. Build files can be an XCode workspace, Visual Studio solution, CMake, or even old school GNU Makefiles.
