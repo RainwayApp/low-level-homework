@@ -1,10 +1,10 @@
 # Take-home assignment: data processing pipeline
 C++ project to implement a multi-thread aware data processing pipeline.
 
-# Project Description
+## Project Description
 Design and implement a framework for a data processing pipeline using C++ (see Wikipedia's description of data processing pipeline). This framework should be general enough to make it applicable to any number of scenarios. It should also be capable of taking advantage of a multi-core operating environment (i.e. multi-threaded data processing). So basically, the framework should make it possible to hook together an arbitrary and custom set of data processing elements to process, a potentially, large data set efficiently. Each data processing element, or node, in the pipeline receives input, processes it, and produces output which is then processed by another node or set of nodes.
 
-# Functional and Non-Functional Requirements
+## Functional and Non-Functional Requirements
 
 * Only standard C++ code should be used (C++11, C++14, or even C++17).
 * No 3rd party libraries.
@@ -14,7 +14,7 @@ Design and implement a framework for a data processing pipeline using C++ (see W
 * Should support any type of data as input or output.
 * The framework's public interfaces should be documented with code comments.
 
-# Project Application
+## Project Application
 In addition to creating a data processing pipeline framework, you should use this framework to create an application that reads an arbitrary number of PCM audio files and produces an output file that is a multi-channel interleaved PCM audio file with a certain amount of gain (i.e. volume increased) applied. Each channel of output comes from one of the input files. Furthermore, the output may need to be converted to a different data type on output, the possible input and output data types being either 32 bit floating point or 16 bit integer.
 
 The application should be a command line executed program that takes as input a path to a directory containing the PCM files, a number indicating the amount of input files in the directory, a string indicating the type of data in the input files (float or int), a number indicating the amount of decibels to add, and a string indicating the type of output (float or int).
