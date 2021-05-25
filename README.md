@@ -1,4 +1,4 @@
-# Low Level Homework
+# Take-home assignment: data processing pipeline
 C++ project to implement a multi-thread aware data processing pipeline.
 
 # Project Description
@@ -36,6 +36,6 @@ Couple of assumptions:
 * The input files will be named in an orderly fashion, i.e. if there are three input files they will be named 0.pcm, 1.pcm, 2.pcm.
 * The input files are just binary files consisting of an array of either 32 bit floating point numbers or 16 bit integers.
 
-The primary goal of the project is to demonstrate understanding of C++ and its standard libraries, and multi-threaded programming, and to demonstrate the ability to learn new technologies and/or techniques. Feel free to google as much as you need to in order to figure out what you need to figure out. If you do run into a block and need help, please don't hesitate to email me with questions.
+The primary goal of the project is to demonstrate understanding of C++ and its standard libraries, and multi-threaded programming, and to demonstrate the ability to learn new technologies and/or techniques. Feel free to google as much as you need to in order to figure out what you need to figure out.
 
 When you have completed the project, create a repo on your personal account and push the source code and the necessary files to build the code and run it, then link it to us in an email to work-at [AT] rainway.com. Build files can be an XCode workspace, Visual Studio solution, CMake, or even old school GNU Makefiles.
